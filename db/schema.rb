@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_063427) do
 
   create_table "users_questions", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "question", null: false
+    t.integer "question_id", null: false
     t.integer "answer_id", null: false
     t.decimal "result", default: "0.0"
     t.datetime "created_at", null: false

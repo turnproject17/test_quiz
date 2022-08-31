@@ -51,6 +51,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
 end
 
 group :development do
@@ -69,4 +70,19 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'database_cleaner-active_record'
 end
+
+group :test do
+  # Ffaker generates dummy data.
+  gem 'ffaker', '~> 2.20'
+  # factory_bot_rails provides integration between factory_bot and rails 5.0 or newer
+  gem 'factory_bot_rails', '~> 6.2'
+  # Code coverage for Ruby with a powerful configuration library and automatic merging of coverage across test suites
+  gem 'simplecov', '~> 0.21.2', require: false
+  # Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
+  gem 'vcr', '~> 6.0'
+  # WebMock allows stubbing HTTP requests and setting expectations on HTTP requests.
+  gem 'webmock', '~> 3.14'
+end
+
