@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  session_id: MyString
+  full_name: MyString
+  contact_number: MyString
+  score: 9.99
+
+two:
+  session_id: MyString
+  full_name: MyString
+  contact_number: MyString
+  score: 9.99
